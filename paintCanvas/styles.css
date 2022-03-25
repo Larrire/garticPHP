@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#screen {
+    width: 800px;
+    height: 400px;
+    border: 2px solid gray;
+    background-color: white;
+    cursor: crosshair;
+}
+
+#div-screen{
+    position: relative;
+}
+
+#div-screen div{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.div-chats {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    height: 35vh;
+}
+
+.div-chat {
+    background-color: #ccc;
+    width: 49%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.div-chat p{
+    max-width: 400px;
+}
+
+.div-chat h4{
+    padding: 5px;
+    background-color: rgb(73, 167, 255);
+    height: 15%;
+}
+
+.div-chat input{
+    height: 15%;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+    border: 0;
+    font-size: 18px;
+}
+
+.div-chat button{
+    height: 15%;
+    width: 10%;
+    border-bottom-right-radius: 10px;
+    border: 1px solid darkgray;
+    cursor: pointer;
+}
+
+.div-chat-msgs{
+    height: 70%;
+    padding: 5px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.div-chat-msgs div{
+    margin-bottom: 5px;
+}
+
+.div-chat-msgs::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    /* background-color: #ccc; */
+    /* background-color: rgb(245, 176, 29); */
+    background-color: rgb(29, 141, 245);
+    background-color: rgb(73, 167, 255);
+    padding: 20px;
+    /* min-width: 10vw; */
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    box-shadow: 3px 3px 3px gray;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.div-opcoes {
+    padding-top: 5px;
+}
+
+#botoes-controle-versao {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+#botoes-controle-versao button{
+    width: 48%;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+.botao-menu {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    border: 0;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 3px #666;
+    transition: background 0.2s;
+}
+
+.botao-menu:hover {
+    background-color: skyblue;
+    /* background-color: rgb(248, 218, 46); */
+}
+
+.d-none {
+    display: none;
+    /* width: 0; */
+    /* height: 0; */
+    /* border: 0; */
+    /* padding: 10px; */
+    /* height: 30px; */
+}
+
+.div-placar .jogador-placar {
+    margin-top: 5px;
+    background-color: #eee;
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #333;
+    transition: height 1s;
+}
+
+.div-placar .jogador-placar.my-player-card{
+    /* background-color: lightgreen; */
+    background-color: lightblue;
+    border: 3px solid darkcyan;
+    /* background-color: #555; */
+    color: white;
+}
+
+.div-placar .jogador-placar.golden{
+    background-color: rgb(247, 200, 45);
+}
+.div-placar .jogador-placar.silver{
+    background-color: rgb(197, 204, 202);
+}
+.div-placar .jogador-placar.bronze{
+    background-color: rgb(209, 152, 28);
+}
+
+.div-placar .jogador-placar .jogador-img img{
+    height: 50px;
+}
+
+.div-placar .jogador-placar .jogados-dados{
+    padding: 5px;
+    font-size: 15px;
+    color: #444;
+}
+
+.div-placar .jogador-placar.my-player-card .jogados-dados{
+    padding: 5px;
+    font-size: 15px;
+    /* color: #eee; */
+}
+
+input#timer {
+    border: 1px solid darkgray;
+    padding: 5px;
+    border-radius: 5px;
+    width: 75px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: #333;
+}
